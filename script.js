@@ -1,15 +1,34 @@
-add (a, b) {
+function add (a, b) {
   return a + b;
 }
 
-subtract (a, b) {
+function subtract (a, b) {
   return a - b;
 }
 
-multiply (a, b) {
+function multiply (a, b) {
   return a * b;
 }
 
-divide (a, b) {
+function divide (a, b) {
   return a / b;
+}
+
+function operate (operator, a, b) {
+  switch (operator) {
+  case '+':
+    add(a, b);
+    break;
+  case '-':
+    subtract(a, b);
+    break;
+  case '*':
+    multiply(a, b);
+    break;
+  case '/':
+    divide(a, b);
+    break;
+  default:
+    console.log("error");
+  }
 }
